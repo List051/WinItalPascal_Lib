@@ -5,7 +5,7 @@
 
     <id>WinItalPascal</id>
 
-    <version>2.0.3</version>
+    <version>2.0.4</version>
 
     <title>WinItalPascal</title>
 
@@ -37,9 +37,9 @@
 	   <dependencies>
     <group targetFramework=".NETFramework4.8">
       <dependency id="Microsoft.ReportingServices.ReportViewerControl.Winforms"
-                  version="[150.1652.0]" />
+                  version="[150.1652.0,]" />
       <dependency id="Microsoft.SqlServer.Types"
-                  version="[14.0.314.76]" />
+                  version="[14.0.314.76,]" />
     </group>
   </dependencies>
 
