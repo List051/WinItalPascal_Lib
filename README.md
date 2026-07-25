@@ -2,6 +2,18 @@
 ```markdown
 # WinItalPascal
 
+## Versioni
+
+### 2.0.4
+- Corretta distribuzione DLL NuGet
+- Migliorata gestione dipendenze NuGet
+- Compatibilità migliorata con progetti esistenti
+
+### 2.0.3
+- Prima release pubblica
+
+
+
 ## Libreria di utilità per applicazioni VB.NET WinForms
 
 **WinItalPascal** è una libreria di componenti e utility pensata per velocizzare lo sviluppo di applicazioni desktop realizzate con:
