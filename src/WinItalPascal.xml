@@ -22,16 +22,6 @@ WinItalPascal
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="T:WinItalPascal.ReportImpostazioni">
- <summary>
- Gestione impostazioni pagina per Report RDLC
- </summary>
-</member>
-<member name="M:WinItalPascal.ReportImpostazioni.SetImpOrd(Microsoft.Reporting.WinForms.ReportViewer)">
- <summary>
- Imposta stampa A4 orizzontale con margini personalizzati
- </summary>
-</member>
 <member name="T:WinItalPascal.ReportManager">
  <summary>
  Gestisce l'apertura dei report RDLC.
@@ -56,6 +46,26 @@ WinItalPascal
 <member name="M:WinItalPascal.ReportManager.Clear(Microsoft.Reporting.WinForms.ReportViewer)">
  <summary>
  Pulisce il ReportViewer.
+ </summary>
+</member>
+<member name="M:WinItalPascal.ReportManager.EsportaPdf(System.String,System.Data.DataTable,System.String,System.Boolean)">
+ <summary>
+ Esporta il report corrente in formato PDF.
+ </summary>
+</member>
+<member name="M:WinItalPascal.ReportManager.Stampa(Microsoft.Reporting.WinForms.ReportViewer)">
+ <summary>
+ Apre la finestra di stampa del ReportViewer.
+ </summary>
+</member>
+<member name="T:WinItalPascal.ReportImpostazioni">
+ <summary>
+ Gestione impostazioni pagina per Report RDLC
+ </summary>
+</member>
+<member name="M:WinItalPascal.ReportImpostazioni.SetImpOrd(Microsoft.Reporting.WinForms.ReportViewer)">
+ <summary>
+ Imposta stampa A4 orizzontale con margini personalizzati
  </summary>
 </member>
 </members>
