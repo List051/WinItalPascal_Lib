@@ -9,6 +9,19 @@
 - Migliorata gestione dipendenze NuGet
 - Compatibilità migliorata con progetti esistenti
 
+Nota:
+Durante il debug in Visual Studio può comparire l'avviso
+"PInvokeStackImbalance" relativo a Microsoft.ReportViewer.Common
+durante l'esportazione PDF.
+
+Questo è un Managed Debugging Assistant del debugger e non indica
+un errore della libreria WinItalPascal.
+
+Se il PDF viene generato correttamente, è possibile disabilitare
+l'interruzione dell'avviso da:
+Debug → Eccezioni → Managed Debugging Assistants →
+PInvokeStackImbalance.
+
 ### 2.0.3
 - Prima release pubblica
 
