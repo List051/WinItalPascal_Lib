@@ -1,6 +1,6 @@
 [![NuGet Version](https://img.shields.io/nuget/v/WinItalPascal.svg)](https://www.nuget.org/packages/WinItalPascal/)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/WinItalPascal.svg)](https://www.nuget.org/packages/WinItalPascal/)
-![Publish to NuGet](https://github.com/List051/WinItalPascal/actions/workflows/publish-nuget.yml/badge.svg)
+![Publish to NuGet](https://github.com/ItalPascal/WinItalPascal/actions/workflows/publish-nuget.yml/badge.svg)
 ```markdown
 # WinItalPascal
 
