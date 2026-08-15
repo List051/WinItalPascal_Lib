@@ -1,3 +1,4 @@
+[![NuGet Version](https://img.shields.io/nuget/v/WinItalPascal.svg)](https://www.nuget.org/packages/WinItalPascal/)
 
 ```markdown
 # WinItalPascal
