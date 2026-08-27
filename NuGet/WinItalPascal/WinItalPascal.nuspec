@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<package>
+
+  <metadata>
+
+    <id>WinItalPascal</id>
+
+    <version>2.0.2</version>
+
+    <title>WinItalPascal</title>
+
+    <authors>ItalPascal</authors>
+
+    <owners>ItalPascal</owners>
+
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+	<license type="file">License.txt</license>
+
+    <description>
+      Libreria utility WinForms per VB.NET:
+      DataGridView, SQL, Form, effetti grafici,
+      popup, logging e utility UI.
+    </description>
+
+    <readme>README.md</readme>
+
+    <tags>
+      winforms vbnet datagridview sql utility
+      ui framework net48
+    </tags>
+
+    <projectUrl>
+      https://github.com/ItalPascal/WinItalPascal
+    </projectUrl>
+
+  </metadata>
+
+  <files>
+
+    <file src="bin\Release\WinItalPascal.dll"
+          target="lib\net48\" />
+
+    <file src="bin\Release\WinItalPascal.pdb"
+          target="lib\net48\" />
+
+    <file src="bin\Release\WinItalPascal.xml"
+          target="lib\net48\" />
+
+    <file src="README.md"
+          target="" />
+
+    <file src="License.txt"
+          target="" />
+
+  </files>
+
+</package>

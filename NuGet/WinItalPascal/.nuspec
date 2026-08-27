@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>WinItalPascal</id>
+    <version>2.0.5</version>
+    <authors>Ital Pascal</authors>
+    <owners>Ital Pascal</owners>
+
+    <title>WinItalPascal</title>
+    <summary>Libreria di utilità per WinForms .NET Framework 4.8</summary>
+    <description>
+      Raccolta di moduli, classi e controlli per semplificare lo sviluppo WinForms:
+      gestione PDF, DataGridView, colori, utilità varie.
+    </description>
+
+    <projectUrl>https://github.com/ItalPascal/WinItalPascal</projectUrl>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+    <tags>WinForms VB.NET Utilities PDF DataGridView</tags>
+
+    <dependencies>
+      <group targetFramework=".net4.8">
+        <dependency id="Microsoft.ReportingServices.ReportViewerControl.Winforms" version="150.1652.0" />
+        <dependency id="Microsoft.SqlServer.Types" version="14.0.314.76" />
+      </group>
+    </dependencies>
+  </metadata>
+
+  <files>
+
+    <file src="bin\Release\WinItalPascal.dll"
+          target="lib\net48\" />
+
+    <file src="bin\Release\WinItalPascal.pdb"
+          target="lib\net48\" />
+
+    <file src="bin\Release\WinItalPascal.xml"
+          target="lib\net48\" />
+
+    <file src="README.md"
+          target="" />
+
+    <file src="License.txt"
+          target="" />
+
+  </files>
+</package>
