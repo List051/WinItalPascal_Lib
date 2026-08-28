@@ -269,7 +269,7 @@ Canale YouTube:
 
 Repository ufficiale:
 
-[https://github.com/List051/WinItalPascal](https://github.com/List051/WinItalPascal)
+[https://github.com/List051/WinItalPascal](https://github.com/List051/WinItalPascal_Lib)
 
 ---
 
