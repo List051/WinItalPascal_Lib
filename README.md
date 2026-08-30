@@ -194,7 +194,8 @@ Esempio
 
 Per guide dettagliate, video dimostrativi, documentazione PDF ed esempi pratici è disponibile il repository dedicato:
 
-👉 WinItalPascal_Help
+## 👉 [WinItalPascal_Help](https://github.com/List051/WinItalPascal_Help)
+
 
 All'interno del repository è disponibile il file index.html, che raccoglie in un'unica pagina:
 
