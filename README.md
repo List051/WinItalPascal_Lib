@@ -23,7 +23,11 @@ utility grafiche
 L'obiettivo è fornire codice riutilizzabile, ordinato e facilmente manutenibile.
 
 📌 Versioni
-2.0.4
+
+## **2.0.6**
+- Aggiunta `IPMessageBox`, alternativa personalizzabile al `MessageBox` standard di Windows Forms.
+- ...
+2.0.5
 Corretta distribuzione DLL NuGet
 Migliorata gestione dipendenze NuGet
 Compatibilità migliorata con progetti esistenti
@@ -59,6 +63,7 @@ WinItalPascal
 │   └── FrameworkLogger
 │
 └── Popup
+| IPMessageBox 
 
 📦 Installazione
 
@@ -276,5 +281,5 @@ WinItalPascal può essere utilizzato in applicazioni personali, aziendali e comm
 
 WinItalPascal – Utility Library for VB.NET WinForms
 
-Versione documentazione: 2.0.4
+Versione documentazione: 2.0.6
 
