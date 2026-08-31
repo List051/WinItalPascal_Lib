@@ -1,7 +1,6 @@
 
-```markdown
+WinItalPascal   <a href="https://www.nuget.org/packages/WinItalPascal"><img src="https://img.shields.io/nuget/v/WinItalPascal.svg" alt="NuGet Version"></a>
 
-WinItalPascal
 Libreria di utilità per applicazioni VB.NET WinForms
 
 WinItalPascal è una libreria di componenti e utility pensata per velocizzare lo sviluppo di applicazioni desktop realizzate con:
