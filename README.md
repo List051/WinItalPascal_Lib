@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="Ital Pascal Logo" width="220">
+  <img src="Logo.png" alt="Ital Pascal Logo" width="220">
 </p>
 
 <h1 align="center">WinItalPascal</h1>
