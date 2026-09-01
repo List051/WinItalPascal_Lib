@@ -21,7 +21,7 @@
 
 
 
-WinItalPascal   <a href="https://www.nuget.org/packages/WinItalPascal"><img src="https://img.shields.io/nuget/v/WinItalPascal.svg" alt="NuGet Version"></a>
+WinItalPascal
 
 Libreria di utilità per applicazioni VB.NET WinForms
 
