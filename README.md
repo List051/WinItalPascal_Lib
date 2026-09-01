@@ -1,3 +1,25 @@
+<p align="center">
+  <img src="logo.png" alt="Ital Pascal Logo" width="220">
+</p>
+
+<h1 align="center">WinItalPascal</h1>
+<p align="center">
+  Libreria di utilità per applicazioni VB.NET WinForms
+</p>
+
+<p align="center">
+  <a href="https://www.nuget.org/packages/WinItalPascal">
+    <img src="https://img.shields.io/nuget/v/WinItalPascal?style=for-the-badge" alt="NuGet Version">
+  </a>
+  <a href="https://www.nuget.org/packages/WinItalPascal">
+    <img src="https://img.shields.io/nuget/dt/WinItalPascal?style=for-the-badge" alt="NuGet Downloads">
+  </a>
+  <a href="https://github.com/List051/WinItalPascal_Lib/blob/main/License.txt">
+    <img src="https://img.shields.io/github/license/List051/WinItalPascal_Lib?style=for-the-badge" alt="License">
+  </a>
+</p>
+
+
 
 WinItalPascal   <a href="https://www.nuget.org/packages/WinItalPascal"><img src="https://img.shields.io/nuget/v/WinItalPascal.svg" alt="NuGet Version"></a>
 
