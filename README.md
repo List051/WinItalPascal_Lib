@@ -20,11 +20,6 @@
 </p>
 
 
-
-WinItalPascal
-
-Libreria di utilità per applicazioni VB.NET WinForms
-
 WinItalPascal è una libreria di componenti e utility pensata per velocizzare lo sviluppo di applicazioni desktop realizzate con:
 
 VB.NET
