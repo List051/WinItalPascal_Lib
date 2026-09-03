@@ -411,7 +411,7 @@ nella cartella dell'applicazione.
 Video dimostrativo GridUtility:
 
 ```
-Inserire link video
+[Link video](https://www.youtube.com/watch?v=tn6D89N6eV4)
 ```
 
 ---
