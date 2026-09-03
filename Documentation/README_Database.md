@@ -21,11 +21,7 @@ La libreria evita di dover riscrivere continuamente:
 
 Prima di utilizzare le funzioni Database è **necessario** inserire nel file:
 
-```
-
 App.config
-
-```
 
 la connection string con il nome:
 
@@ -48,15 +44,12 @@ Esempio:
  providerName="System.Data.SqlClient"/>
 
 </connectionStrings>
-````
 
 Se la connection string non viene trovata verrà generato un errore:
 
 ```
 Connection string 'MiaConnessione' non trovata in App.config
 ```
-
----
 
 # Classi disponibili
 
@@ -67,8 +60,6 @@ DB
 DBApri
 DataGVLoad
 ```
-
----
 
 # Classe DB
 
@@ -83,7 +74,6 @@ Permette di eseguire:
 * caricamento dati per DataGridView;
 * query parametrizzate.
 
----
 
 ## Apertura connessione
 
@@ -107,7 +97,6 @@ MiaConnessione
 
 dal file App.config.
 
----
 
 # ExecuteScalar
 
@@ -130,8 +119,6 @@ Dim totale As Integer =
     )
 ```
 
----
-
 # ExecuteNonQuery
 
 Utilizzato per:
@@ -150,7 +137,6 @@ Dim risultato As Integer =
 
 Il valore restituito indica il numero di righe modificate.
 
----
 
 # FillDataTable
 
@@ -172,8 +158,6 @@ Dim dt As DataTable =
 DataGridView1.DataSource = dt
 ```
 
----
-
 # FillDataSet
 
 Permette di caricare più tabelle.
@@ -186,7 +170,6 @@ Dim ds As DataSet =
     "SELECT * FROM Clienti")
 ```
 
----
 
 # Query semplificata
 
@@ -201,8 +184,6 @@ Dim dt As DataTable =
     "%" & TxtCitta.Text & "%")
 ```
 
----
-
 # Query con più parametri
 
 Esempio:
@@ -216,8 +197,6 @@ Dim dt As DataTable =
     "%" & TxtCitta.Text & "%",
     "%" & TxtCAP.Text & "%")
 ```
-
----
 
 # QueryLike
 
@@ -240,8 +219,6 @@ La libreria aggiunge automaticamente:
 
 prima e dopo il testo cercato.
 
----
-
 # Recupero elenco Tabelle
 
 Esempio:
@@ -252,8 +229,6 @@ Dim dt As DataTable =
 ```
 
 Restituisce tutte le tabelle presenti nel database.
-
----
 
 # Classe DBApri
 
@@ -268,8 +243,6 @@ ExecuteScalar()
 ExecuteNonQuery()
 ```
 
----
-
 ## Esempio GetDataTable
 
 ```vb
@@ -279,16 +252,11 @@ Dim dt As DataTable =
 
 DataGridView1.DataSource = dt
 ```
-
----
-
 # Classe DataGVLoad
 
 Classe dedicata al caricamento diretto dei DataGridView.
 
 Permette di collegare una query SQL direttamente alla griglia.
-
----
 
 ## Esempio:
 
@@ -304,8 +272,6 @@ La libreria:
 * esegue la query;
 * carica il DataTable;
 * assegna il DataSource.
-
----
 
 # Query con parametri
 
@@ -325,9 +291,6 @@ DataGVLoad.ApriDGV(
      WHERE Cliente=@Cliente",
     parametri)
 ```
-
----
-
 # Gestione errori
 
 Le classi Database integrano il sistema:
@@ -343,8 +306,6 @@ ItalPascal_Log.txt
 ```
 
 presente nella cartella dell'applicazione.
-
----
 
 # Esempio completo
 
@@ -372,8 +333,6 @@ e As EventArgs) Handles MyBase.Load
 End Sub
 ```
 
----
-
 # Note importanti
 
 La libreria utilizza:
@@ -400,8 +359,6 @@ README_Forms.md
 README_Logging.md
 README_Popup.md
 ```
-
----
 
 # Video Tutorial
 
