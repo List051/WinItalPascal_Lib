@@ -340,13 +340,13 @@ Si consiglia di utilizzare:
 
 📺
 
-Inserire link video
+[Link video](https://www.youtube.com/watch?v=tn6D89N6eV4)
 
 ---
 
 # 💻 Repository GitHub
 
-[https://github.com/List051/WinItalPascal](https://github.com/List051/WinItalPascal)
+[https://github.com/List051/WinItalPasca_Libl](https://github.com/List051/WinItalPascal_Lib)
 
 ---
 
