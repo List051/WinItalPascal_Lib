@@ -239,32 +239,21 @@ README_Popup.md
 
 Video dedicato al modulo Forms:
 
-```
 https://youtu.be/BsjiVc-j8qs?si=_L_G-_f82vs04tNl
-```
 
----
 
 # Repository GitHub
 
-```
-https://github.com/List051/WinItalPascal
-```
-
----
+https://github.com/List051/WinItalPascal_Lib
 
 # Pacchetto NuGet
 
-```
 WinItalPascal
-```
-
----
 
 WinItalPascal
 
 Utility Library for VB.NET WinForms
 
-Versione documentazione: 2.0.3
+Versione documentazione: 2.0.6
 
 ```
