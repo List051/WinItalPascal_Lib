@@ -39,7 +39,7 @@ Il nome deve essere esattamente:
 
 ```
 
-MiaConnessione
+**MiaConnessione**
 
 ````
 
@@ -416,7 +416,7 @@ README_Popup.md
 Video dedicato al modulo Database:
 
 ```
-[Inserire link video Database](https://www.youtube.com/watch?v=tn6D89N6eV4)
+[Video Esempi](https://www.youtube.com/watch?v=tn6D89N6eV4)
 
 ```
 
