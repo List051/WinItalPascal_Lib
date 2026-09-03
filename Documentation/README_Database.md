@@ -416,7 +416,8 @@ README_Popup.md
 Video dedicato al modulo Database:
 
 ```
-Inserire link video Database
+[Inserire link video Database](https://www.youtube.com/watch?v=tn6D89N6eV4)
+
 ```
 
 ---
@@ -424,7 +425,7 @@ Inserire link video Database
 # Repository GitHub
 
 ```
-https://github.com/List051/WinItalPascal
+https://github.com/List051/WinItalPascal_Lib
 ```
 
 ---
