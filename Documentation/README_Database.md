@@ -29,19 +29,11 @@ App.config
 
 la connection string con il nome:
 
-```
-
 MiaConnessione
-
-```
 
 Il nome deve essere esattamente:
 
-```
-
 **MiaConnessione**
-
-````
 
 Esempio:
 
@@ -415,26 +407,16 @@ README_Popup.md
 
 Video dedicato al modulo Database:
 
-```
 [Video Esempi](https://www.youtube.com/watch?v=tn6D89N6eV4)
-
-```
-
----
 
 # Repository GitHub
 
-```
 https://github.com/List051/WinItalPascal_Lib
-```
-
----
 
 # Pacchetto NuGet
 
-```
 WinItalPascal
-```
+
 
 ---
 
@@ -442,6 +424,6 @@ WinItalPascal
 
 Utility Library for VB.NET WinForms
 
-Versione documentazione: 2.0.3
+Versione documentazione: 2.0.6
 
 ```
