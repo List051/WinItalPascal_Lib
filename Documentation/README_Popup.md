@@ -404,7 +404,7 @@ Consulta anche:
 
 ---
 
-Versione documentazione: 2.0.3
+Versione documentazione: 2.0.6
 
 **WinItalPascal – Popup e Utility**
 
