@@ -342,19 +342,16 @@ Si consiglia di utilizzare:
 
 [Link video](https://www.youtube.com/watch?v=tn6D89N6eV4)
 
----
 
 # 💻 Repository GitHub
 
 [https://github.com/List051/WinItalPasca_Libl](https://github.com/List051/WinItalPascal_Lib)
 
----
 
 # 📦 Pacchetto NuGet
 
 [https://www.nuget.org/packages/WinItalPascal](https://www.nuget.org/packages/WinItalPascal)
 
----
 
 # 📄 Documentazione
 
@@ -370,7 +367,7 @@ Consulta anche:
 
 ---
 
-Versione documentazione: 2.0.3
+Versione documentazione: 2.0.6
 
 **WinItalPascal – Logging**
 
