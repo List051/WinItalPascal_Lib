@@ -371,11 +371,16 @@ L'utilizzo di `PopupHelper` permette di:
 
 [https://youtu.be/4EyZb3B9hFM?si=kW89BimOeiNbdfmU](https://youtu.be/4EyZb3B9hFM?si=kW89BimOeiNbdfmU)
 
+Esempio in Win Spinnet
+
+[Win PopUp in Win Spinntet](https://www.youtube.com/watch?v=UboNebA_Irs)
+
+
 ---
 
 # 💻 Repository GitHub
 
-[https://github.com/List051/WinItalPascal](https://github.com/List051/WinItalPascal)
+[https://github.com/List051/WinItalPascalLib](https://github.com/List051/WinItalPascal_Lib)
 
 ---
 
