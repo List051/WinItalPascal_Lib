@@ -404,17 +404,12 @@ ItalPascal_Log.txt
 
 nella cartella dell'applicazione.
 
----
-
 # Video Tutorial
 
 Video dimostrativo GridUtility:
 
-```
 [Link video](https://www.youtube.com/watch?v=tn6D89N6eV4)
-```
 
----
 
 # Documentazione correlata
 
@@ -433,6 +428,6 @@ WinItalPascal
 
 Utility Library for VB.NET WinForms
 
-Versione documentazione: 2.0.3
+Versione documentazione: 2.0.6
 
 ```
