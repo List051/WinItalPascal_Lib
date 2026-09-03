@@ -369,7 +369,7 @@ L'utilizzo di `PopupHelper` permette di:
 
 📺
 
-[https://youtu.be/4EyZb3B9hFM?si=kW89BimOeiNbdfmU](https://youtu.be/4EyZb3B9hFM?si=kW89BimOeiNbdfmU)
+[Prima versione PopUp](https://youtu.be/4EyZb3B9hFM?si=kW89BimOeiNbdfmU)
 
 Esempio in Win Spinnet
 
