@@ -278,7 +278,7 @@ FROM vw_OrdiniClienti
 
 ---
 
-Versione documentazione: 2.0.3
+Versione documentazione: 2.0.6
 
 WinItalPascal – ReportManager
 
