@@ -248,6 +248,18 @@ Per la documentazione completa, gli esempi e i video dimostrativi:
 
 👉 WinItalPascal_Help
 
+> `WinTest-SenzaVINCOLI` è un progetto dimostrativo e non rappresenta la
+> libreria completa. Il suo scopo è mostrare come integrare e utilizzare
+> WinItalPascal in un'applicazione Windows Forms.
+
+
+
+Il progetto [WinSenzaVincoli](https://github.com/List051/WinTest-SenzaVINCOLI)
+mostra come utilizzare WinItalPascal all'interno di un'applicazione desktop
+reale sviluppata con VB.NET, Windows Forms e .NET Framework 4.8.
+
+
+
 🛠 Compatibilità
 .NET Framework 4.8
 VB.NET WinForms
@@ -255,6 +267,7 @@ SQL Server
 Visual Studio 2019
 Visual Studio 2022
 🤝 Contribuire
+
 
 WinItalPascal è un progetto in continua evoluzione e i contributi sono benvenuti.
 
