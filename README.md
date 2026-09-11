@@ -7,17 +7,10 @@
   Libreria di utilità per applicazioni VB.NET WinForms
 </p>
 
-<p align="center">
-  <a href="https://www.nuget.org/packages/WinItalPascal">
-    <img src="https://img.shields.io/nuget/v/WinItalPascal?style=for-the-badge" alt="NuGet Version">
-  </a>
-  <a href="https://www.nuget.org/packages/WinItalPascal">
-    <img src="https://img.shields.io/nuget/dt/WinItalPascal?style=for-the-badge" alt="NuGet Downloads">
-  </a>
-  <a href="https://github.com/List051/WinItalPascal_Lib/blob/main/License.txt">
-    <img src="https://img.shields.io/github/license/List051/WinItalPascal_Lib?style=for-the-badge" alt="License">
-  </a>
-</p>
+
+[![NuGet Version](https://img.shields.io/nuget/v/WinItalPascal?style=for-the-badge)](https://www.nuget.org/packages/WinItalPascal) [![NuGet Downloads](https://img.shields.io/nuget/dt/WinItalPascal?style=for-the-badge)](https://www.nuget.org/packages/WinItalPascal) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://github.com/List051/WinItalPascal_Lib/blob/main/License.txt) [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-brightgreen?style=for-the-badge)](https://list051.github.io/WinVideoShowcase/)
+
+
 
 
 WinItalPascal è una libreria di componenti e utility pensata per velocizzare lo sviluppo di applicazioni desktop realizzate con:
@@ -250,7 +243,6 @@ README_Forms.md
 README_Logging.md
 README_Popup.md
 CHANGELOG.md
-
 
 Per la documentazione completa, gli esempi e i video dimostrativi:
 
