@@ -1,5 +1,0 @@
-MIT License
-
-Copyright (c) 2026 ItalPascal
-
-Permission is hereby granted, free of charge...
