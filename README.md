@@ -8,7 +8,7 @@
 </p>
 
 
-[![NuGet Version](https://img.shields.io/nuget/v/WinItalPascal?style=for-the-badge)](https://www.nuget.org/packages/WinItalPascal) [![NuGet Downloads](https://img.shields.io/nuget/dt/WinItalPascal?style=for-the-badge)](https://www.nuget.org/packages/WinItalPascal) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://github.com/List051/WinItalPascal_Lib/blob/main/License.txt) [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-brightgreen?style=for-the-badge)](https://list051.github.io/WinVideoShowcase/)
+[![NuGet Version](https://img.shields.io/nuget/v/WinItalPascal?style=for-the-badge)](https://www.nuget.org/packages/WinItalPascal) [![NuGet Downloads](https://img.shields.io/nuget/dt/WinItalPascal?style=for-the-badge)](https://www.nuget.org/packages/WinItalPascal) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://github.com/List051/WinItalPascal_Lib/blob/main/License) [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-brightgreen?style=for-the-badge)](https://list051.github.io/WinVideoShowcase/)
 
 
 
