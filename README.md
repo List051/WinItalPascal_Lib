@@ -5,29 +5,87 @@
 <h1 align="center">WinItalPascal</h1>
 <p align="center">
   Libreria di utilità per applicazioni VB.NET WinForms
+
+
+<!-- ========================= -->
+<!--   BADGE - MANUAL BUILDER  -->
+<!-- ========================= -->
+
+<div align="center">
+  <strong>📘 WinItalPascal_ManualBuilder</strong>
+</div>
+
+<p align="center">
+
+  <a href="https://github.com/List051/WinItalPascal_ManualBuilder">
+    <img src="https://img.shields.io/github/stars/List051/WinItalPascal_ManualBuilder?style=for-the-badge" alt="MB Stars">
+  </a>
+
+  <a href="https://github.com/List051/WinItalPascal_ManualBuilder">
+    <img src="https://img.shields.io/github/forks/List051/WinItalPascal_ManualBuilder?style=for-the-badge" alt="MB Forks">
+  </a>
+
+  <a href="https://github.com/List051/WinItalPascal_ManualBuilder/issues">
+    <img src="https://img.shields.io/github/issues/List051/WinItalPascal_ManualBuilder?style=for-the-badge" alt="MB Issues">
+  </a>
+
+  <a href="https://github.com/List051/WinItalPascal_ManualBuilder/commits/main">
+    <img src="https://img.shields.io/github/last-commit/List051/WinItalPascal_ManualBuilder?style=for-the-badge" alt="MB Last Commit">
+  </a>
+
+  <a href="https://github.com/List051/WinItalPascal_ManualBuilder/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/List051/WinItalPascal_ManualBuilder?style=for-the-badge" alt="MB License">
+  </a>
+
 </p>
+
+<!-- SEPARATORE -->
+<div align="center" style="font-size:28px; margin: 10px 0;">⬤</div>
+
+<!-- ========================= -->
+<!--   BADGE - LIBRERIA VB.NET -->
+<!-- ========================= -->
+
+<div align="center">
+  <strong>🧩 WinItalPascal_Lib</strong>
+</div>
+
 <p align="center">
 
   <!-- NuGet -->
   <a href="https://www.nuget.org/packages/WinItalPascal">
     <img src="https://img.shields.io/nuget/v/WinItalPascal?style=for-the-badge" alt="NuGet Version">
   </a>
+
   <a href="https://www.nuget.org/packages/WinItalPascal">
     <img src="https://img.shields.io/nuget/dt/WinItalPascal?style=for-the-badge" alt="NuGet Downloads">
   </a>
 
   <!-- GitHub -->
-  <img src="https://img.shields.io/github/stars/List051?style=for-the-badge" alt="Stars">
-  <img src="https://img.shields.io/github/forks/List051/WinItalPascal_Lib?style=for-the-badge" alt="Forks">
-  <img src="https://img.shields.io/github/issues/List051/WinItalPascal_Lib?style=for-the-badge" alt="Issues">
-  <img src="https://img.shields.io/github/last-commit/List051/WinItalPascal_Lib?style=for-the-badge" alt="Last Commit">
+  <a href="https://github.com/List051/WinItalPascal_Lib">
+    <img src="https://img.shields.io/github/stars/List051/WinItalPascal_Lib?style=for-the-badge" alt="Lib Stars">
+  </a>
 
-  <!-- License -->
+  <a href="https://github.com/List051/WinItalPascal_Lib">
+    <img src="https://img.shields.io/github/forks/List051/WinItalPascal_Lib?style=for-the-badge" alt="Lib Forks">
+  </a>
+
+  <a href="https://github.com/List051/WinItalPascal_Lib/issues">
+    <img src="https://img.shields.io/github/issues/List051/WinItalPascal_Lib?style=for-the-badge" alt="Lib Issues">
+  </a>
+
+  <a href="https://github.com/List051/WinItalPascal_Lib/commits/main">
+    <img src="https://img.shields.io/github/last-commit/List051/WinItalPascal_Lib?style=for-the-badge" alt="Lib Last Commit">
+  </a>
+
   <a href="https://github.com/List051/WinItalPascal_Lib/blob/main/License.txt">
-    <img src="https://img.shields.io/github/license/List051/WinItalPascal_Lib?style=for-the-badge" alt="License">
+    <img src="https://img.shields.io/github/license/List051/WinItalPascal_Lib?style=for-the-badge" alt="Lib License">
   </a>
 
 </p>
+
+<!--   FINE BADGE - LIBRERIA VB.NET -->
+---
 
 
 WinItalPascal è una libreria di componenti e utility pensata per velocizzare lo sviluppo di applicazioni desktop realizzate con:
@@ -307,9 +365,23 @@ seguire lo stile e la struttura già presenti nel progetto;
 essere semplici da comprendere e mantenere;
 includere, quando necessario, una descrizione del funzionamento o un esempio pratico.
 
-Per modifiche significative o nuove funzionalità, è consigliabile aprire prima una Issue, così da poter discutere la proposta prima di procedere con l'implementazione.
 
-Grazie a tutti coloro che contribuiscono a migliorare WinItalPascal e a rendere la libreria sempre più utile alla community! ❤️
+# 🔗 Link utili
+
+## 📚 Documentazione della libreria WinItalPascal
+
+- [📘 Documentazione Tecnica (*.md)](https://github.com/List051/WinItalPascal_Lib/tree/main/Documentation)
+- [📄 Manuali PDF della libreria](https://github.com/List051/WinItalPascal_Lib/tree/main/Help/pdf)
+
+---
+
+## 🎬 Video dimostrativi
+
+- [🎥 Video Esempi – WinVideoShowcase](https://list051.github.io/WinVideoShowcase/)
+- [📺 Canale YouTube](https://www.youtube.com/@iaoraGo)
+- [🎞️ Playlist completa WinItalPascal](https://www.youtube.com/watch?v=UboNebA_Irs&list=PLqYE2xAtyfEAiNY4qC2LeJJuCJPyUScXL)
+
+---
 
 📄 Licenza
 
