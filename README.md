@@ -393,3 +393,32 @@ WinItalPascal – Utility Library for VB.NET WinForms
 
 Versione documentazione: 2.0.6
 
+---
+
+<div align="center">
+  <h2>⭐ Come supportare il progetto</h2>
+  <p>Se questo progetto ti è utile, puoi supportarlo con un semplice gesto:</p>
+
+  <!-- Pulsante Star -->
+  <a href="https://github.com/List051/WinItalPascal_Lib">
+    <img src="https://img.shields.io/github/stars/List051/WinItalPascal_Lib?style=social" alt="Star this repo">
+  </a>
+
+  <!-- Pulsante Fork -->
+  <a href="https://github.com/List051/WinItalPascal_Lib/fork">
+    <img src="https://img.shields.io/github/forks/List051/WinItalPascal_Lib?label=fork&style=social" alt="Fork this repo">
+  </a>
+
+  <p>Mettere una ⭐ o fare un Fork aiuta il progetto a crescere e permette ad altri sviluppatori di scoprirlo.</p>
+
+  <br>
+
+  <!-- Pulsante Follow autore -->
+  <p>Vuoi restare aggiornato sui nuovi progetti?</p>
+
+  <a href="https://github.com/List051">
+    <img src="https://img.shields.io/github/followers/List051?label=Follow%20%40List051&style=social" alt="Follow @List051">
+  </a>
+
+  <p>Grazie per il tuo supporto!</p>
+</div>
