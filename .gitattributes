@@ -1,0 +1,10 @@
+# Forza GitHub Linguist a riconoscere VB.NET come linguaggio principale
+*.vb linguist-language=Visual Basic
+*.Designer.vb linguist-language=Visual Basic
+*.vbproj linguist-language=Visual Basic
+
+# Esclude HTML dalla classificazione (non elimina i file)
+*.html linguist-detectable=false
+*.htm linguist-detectable=false
+*.xml linguist-detectable=false
+*.md linguist-detectable=false
