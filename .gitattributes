@@ -1,11 +1,38 @@
+###############################################
+#   CONFIGURAZIONE SPECIALE PER REPO MISTI    #
+#   VB.NET + HTML (WinItalPascal Style)       #
+###############################################
+
 # Forza VB.NET come linguaggio principale
 *.vb linguist-language=Visual Basic
 *.Designer.vb linguist-language=Visual Basic
 *.vbproj linguist-language=Visual Basic
+*.sln linguist-language=Visual Basic
 
-# Esclude CSS, HTML e Markdown dalla classificazione
-*.css linguist-detectable=false
-*.html linguist-detectable=false
-*.htm linguist-detectable=false
-*.xml linguist-detectable=false
-*.md linguist-detectable=false
+# Mantieni HTML visibile ma NON predominante
+*.html linguist-weight=0.1
+*.htm linguist-weight=0.1
+
+# Mantieni CSS visibile ma NON predominante
+*.css linguist-weight=0.1
+
+# Riduci peso di file non di codice
+*.xml linguist-weight=0.1
+*.json linguist-weight=0.1
+*.md linguist-weight=0.1
+*.txt linguist-weight=0.1
+
+# Escludi completamente immagini e media
+*.png linguist-detectable=false
+*.jpg linguist-detectable=false
+*.jpeg linguist-detectable=false
+*.gif linguist-detectable=false
+*.mp4 linguist-detectable=false
+*.webm linguist-detectable=false
+*.pdf linguist-detectable=false
+
+###############################################
+#   RISULTATO:
+#   VB.NET sarà sempre il linguaggio principale
+#   HTML e CSS saranno visibili ma non dominanti
+###############################################
