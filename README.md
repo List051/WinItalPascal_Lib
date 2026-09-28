@@ -116,7 +116,7 @@ Corretta distribuzione DLL NuGet
 Migliorata gestione dipendenze NuGet
 Compatibilità migliorata con progetti esistenti
 
-Nota importante
+📄 Nota importante
 
 Durante il debug in Visual Studio può comparire l'avviso PInvokeStackImbalance relativo a Microsoft.ReportViewer.Common durante l'esportazione PDF.
 
@@ -151,12 +151,12 @@ WinItalPascal
 
 📦 Installazione
 
-Installazione tramite NuGet:
+📄 Installazione tramite NuGet:
 
 Install-Package WinItalPascal
 
 
-Oppure tramite Visual Studio:
+📄 Oppure tramite Visual Studio:
 
 Gestione pacchetti NuGet → Cerca → WinItalPascal
 
