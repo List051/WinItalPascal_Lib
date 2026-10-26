@@ -8,55 +8,472 @@ WinItalPascal
 <members>
 <member name="T:WinItalPascal.My.Resources.Resources">
 <summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
+  Classe di risorse fortemente tipizzata per la ricerca di stringhe localizzate e così via.
 </summary>
 </member>
 <member name="P:WinItalPascal.My.Resources.Resources.ResourceManager">
 <summary>
-  Returns the cached ResourceManager instance used by this class.
+  Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
 </summary>
 </member>
 <member name="P:WinItalPascal.My.Resources.Resources.Culture">
 <summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
+  Esegue l'override della proprietà CurrentUICulture del thread corrente per tutte le
+  ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
 </summary>
 </member>
-<member name="T:WinItalPascal.ReportManager">
+<member name="P:WinItalPascal.My.Resources.Resources._error">
+<summary>
+  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WinItalPascal.My.Resources.Resources.chat">
+<summary>
+  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WinItalPascal.My.Resources.Resources.exclamation">
+<summary>
+  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WinItalPascal.My.Resources.Resources.information">
+<summary>
+  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WinItalPascal.My.Resources.Resources.question">
+<summary>
+  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:WinItalPascal.ConfigHelper.GetConnectionString(System.String)">
  <summary>
- Gestisce l'apertura dei report RDLC.
+ Restituisce la connection string definita nel file App.config.
+
+ Se la chiave richiesta non esiste oppure la stringa di connessione
+ è vuota, viene visualizzato un messaggio tramite IPMessageBox
+ e viene generata una ConfigurationErrorsException.
+ </summary>
+ <param name="name">
+ Nome della connection string da recuperare.
+ Il valore predefinito è "MiaConnessione".
+ </param>
+ <returns>
+ La stringa di connessione associata alla chiave specificata.
+ </returns>
+ <exception cref="T:System.Configuration.ConfigurationErrorsException">
+ Generata quando la connection string non è presente
+ o risulta vuota nel file App.config.
+ </exception>
+ <remarks>
+ Esempio di configurazione richiesta:
+ <code>
+ &lt;connectionStrings&gt;
+   &lt;add name="MiaConnessione"
+        connectionString="Data Source=SERVER;
+        Initial Catalog=DATABASE;
+        Integrated Security=True"
+        providerName="System.Data.SqlClient" /&gt;
+ &lt;/connectionStrings&gt;
+ </code>
+ </remarks>
+</member>
+<member name="F:WinItalPascal.ModColoriDgv._cellFormattingHandlers">
+ <summary>
+ Mantiene il riferimento agli handler CellFormatting
+ associati alle DataGridView colorate tramite
+ ColoraColonneSpec.
  </summary>
 </member>
-<member name="F:WinItalPascal.ReportManager.CartellaReport">
+<member name="M:WinItalPascal.ModColoriDgv.ColoraColonneSpec(System.Windows.Forms.DataGridView,System.Int32[],System.Drawing.Color,System.Drawing.Color)">
  <summary>
- Apre un report utilizzando una DataTable.
+ Applica una colorazione personalizzata alle colonne specificate.
+ Se esiste già una configurazione precedente sulla stessa griglia,
+ viene sostituita.
  </summary>
- 
+ <param name="dgv">DataGridView da elaborare.</param>
+ <param name="colonne">Indici delle colonne da colorare.</param>
+ <param name="coloreSfondo">Colore di sfondo.</param>
+ <param name="coloreTesto">Colore del testo.</param>
 </member>
-<member name="M:WinItalPascal.ReportManager.ApriReport(Microsoft.Reporting.WinForms.ReportViewer,System.String,System.String,System.String,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+<member name="M:WinItalPascal.ModColoriDgv.ResetColoriDgv(System.Windows.Forms.DataGridView[])">
  <summary>
- Apre un report eseguendo una query SQL.
+ Ripristina i colori originali delle DataGridView
+ e rimuove eventuali handler applicati da ColoraColonneSpec.
+ </summary>
+ <param name="griglie">Elenco delle DataGridView.</param>
+</member>
+<member name="M:WinItalPascal.ModHelp.PercorsoIndice">
+ <summary>
+ Restituisce l'URI assoluto del file Help\Index.html.
+ Cerca più posizioni comuni e restituisce la prima esistente.
+ Se non trovato restituisce comunque un file-URI basato sul primo candidato (utile per debug).
  </summary>
 </member>
-<member name="M:WinItalPascal.ReportManager.Refresh(Microsoft.Reporting.WinForms.ReportViewer)">
+<member name="M:WinItalPascal.FrameworkLogger.Log(System.String)">
  <summary>
- Aggiorna il ReportViewer.
+ Scrive un messaggio nel file di log della libreria.
  </summary>
+ <param name="message">
+ Messaggio da registrare nel file di log.
+ </param>
+ <remarks>
+ Ogni voce viene preceduta automaticamente
+ da data e ora nel formato:
+ yyyy-MM-dd HH:mm:ss.
+
+ Eventuali errori di scrittura vengono ignorati
+ per evitare che il sistema di logging possa
+ interrompere l'esecuzione dell'applicazione.
+ </remarks>
+ <example>
+ FrameworkLogger.Log(
+     "Avvio applicazione")
+ </example>
 </member>
-<member name="M:WinItalPascal.ReportManager.Clear(Microsoft.Reporting.WinForms.ReportViewer)">
+<member name="M:WinItalPascal.FrameworkLogger.LogError(System.Exception,System.String)">
  <summary>
- Pulisce il ReportViewer.
+ Registra un'eccezione nel file di log.
  </summary>
+ <param name="ex">
+ Eccezione da registrare.
+ </param>
+ <param name="context">
+ Nome del metodo, della classe o del contesto
+ in cui si è verificato l'errore.
+ </param>
+ <remarks>
+ Il messaggio viene registrato nel formato:
+
+ ERROR [Contesto] - MessaggioErrore
+
+ Questo metodo utilizza internamente
+ il metodo Log().
+ </remarks>
+ <example>
+ Try
+     ' codice
+ Catch ex As Exception
+     FrameworkLogger.LogError(
+         ex,
+         "GridUtility.Initialize")
+ End Try
+ </example>
 </member>
-<member name="M:WinItalPascal.ReportManager.EsportaPdf(System.String,System.Data.DataTable,System.String,System.Boolean)">
+<member name="M:WinItalPascal.GridUtility.ConvertiMaiuscolo(System.Windows.Forms.DataGridView)">
  <summary>
- Esporta il report corrente in formato PDF.
+ Converte in maiuscolo tutti i valori di tipo String presenti
+ nelle celle del DataGridView specificato.
  </summary>
+ <param name="dgv">
+ Controllo DataGridView da elaborare.
+ </param>
+ <remarks>
+ La conversione viene applicata esclusivamente alle celle
+ contenenti valori di tipo String.
+ Le celle contenenti altri tipi di dato non vengono modificate.
+ </remarks>
+ <example>
+ GridUtility.ConvertiMaiuscolo(DgvClienti)
+ </example>
 </member>
-<member name="M:WinItalPascal.ReportManager.Stampa(Microsoft.Reporting.WinForms.ReportViewer)">
+<member name="M:WinItalPascal.GridUtility.ColoraColonne(System.Windows.Forms.DataGridView,WinItalPascal.Colori.ColoreTipo,WinItalPascal.Colori.ColoreTipo,WinItalPascal.Colori.ColoreTipo)">
  <summary>
- Apre la finestra di stampa del ReportViewer.
+ Applica un colore di sfondo alle prime tre colonne
+ del DataGridView specificato.
  </summary>
+ <param name="dgv">
+ DataGridView sul quale applicare la colorazione.
+ </param>
+ <param name="col0">
+ Colore da applicare alla colonna con indice 0.
+ </param>
+ <param name="col1">
+ Colore da applicare alla colonna con indice 1.
+ </param>
+ <param name="col2">
+ Colore da applicare alla colonna con indice 2.
+ </param>
+ <remarks>
+ Il metodo verifica automaticamente l'esistenza
+ delle colonne prima di applicare la colorazione.
+ È possibile colorare una o più colonne specificando
+ soltanto i parametri desiderati.
+ </remarks>
+ <example>
+ GridUtility.ColoraColonne(
+     DgvClienti,
+     Colori.ColoreTipo.Giallo,
+     Colori.ColoreTipo.Azzurro,
+     Colori.ColoreTipo.VerdeChiaro)
+ </example>
+</member>
+<member name="M:WinItalPascal.GridUtility.FiltraTutti(System.Windows.Forms.DataGridView,System.Data.DataTable,System.String)">
+ <summary>
+ Filtra tutte le colonne di una DataTable associata
+ a un DataGridView utilizzando il testo specificato.
+ </summary>
+ <param name="dgv">
+ DataGridView da aggiornare con il risultato del filtro.
+ </param>
+ <param name="dtOriginal">
+ DataTable originale contenente i dati da filtrare.
+ </param>
+ <param name="testo">
+ Testo da ricercare in tutte le colonne della tabella.
+ </param>
+ <remarks>
+ Il filtro viene applicato a tutte le colonne.
+ Le colonne non stringa vengono convertite
+ automaticamente in testo tramite la funzione Convert().
+ Se il testo è vuoto o nullo, viene ripristinata
+ la visualizzazione completa della tabella originale.
+ </remarks>
+ <example>
+ GridUtility.FiltraTutti(
+     DgvOrdini,
+     dtOrdini,
+     TxtRicerca.Text)
+ </example>
+</member>
+<member name="M:WinItalPascal.LogLeggiScrivi.ApriLog(System.String)">
+ <summary>
+ Apre il file di log utilizzando il programma associato
+ dal sistema operativo.
+ </summary>
+ <param name="NomeFileLog">
+ Nome del file di log da aprire.
+ Se non specificato viene utilizzato
+ "ItalPascal_Log.txt".
+ </param>
+ <returns>
+ Restituisce True se il file è stato aperto
+ correttamente; False in caso di errore
+ o file inesistente.
+ </returns>
+ <remarks>
+ Se il file non viene trovato viene visualizzato
+ un messaggio informativo tramite IPMessageBox.
+ </remarks>
+ <example>
+ LogLeggiScrivi.ApriLog()
+
+ LogLeggiScrivi.ApriLog("ArchivioLog.txt")
+ </example>
+</member>
+<member name="M:WinItalPascal.LogLeggiScrivi.ScriviLog(System.String,System.Exception)">
+ <summary>
+ Registra nel file di log il dettaglio
+ di un'eccezione generata dall'applicazione.
+ </summary>
+ <param name="Procedura">
+ Nome della procedura o del metodo che
+ ha generato l'errore.
+ </param>
+ <param name="ex">
+ Eccezione da registrare nel log.
+ </param>
+ <remarks>
+ Vengono salvati:
+
+ - Data e ora
+ - Nome procedura
+ - Messaggio di errore
+ - Stack completo dell'eccezione
+
+ Eventuali errori durante la scrittura
+ vengono ignorati per evitare blocchi
+ dell'applicazione.
+ </remarks>
+ <example>
+ Try
+     CaricaDati()
+ Catch ex As Exception
+     LogLeggiScrivi.ScriviLog(
+         NameOf(CaricaDati),
+         ex)
+ End Try
+ </example>
+</member>
+<member name="M:WinItalPascal.LogLeggiScrivi.ClearLog(System.Int32)">
+ <summary>
+ Riduce il contenuto del file di log
+ mantenendo soltanto gli eventi più recenti.
+ </summary>
+ <param name="NumeroEventiDaMantenere">
+ Numero di eventi che devono essere conservati.
+ Il valore predefinito è 5.
+ </param>
+ <remarks>
+ Gli eventi più vecchi vengono eliminati.
+ Il metodo preserva solo gli ultimi eventi
+ presenti nel file di log.
+ </remarks>
+ <example>
+ LogLeggiScrivi.ClearLog()
+
+ LogLeggiScrivi.ClearLog(10)
+ </example>
+</member>
+<member name="M:WinItalPascal.LogLeggiScrivi.ScriviLogMsg(System.String)">
+ <summary>
+ Registra un messaggio informativo
+ all'interno del file di log.
+ </summary>
+ <param name="Messaggio">
+ Messaggio da registrare.
+ </param>
+ <remarks>
+ Questo metodo è utile per registrare
+ eventi applicativi, operazioni concluse
+ correttamente, accessi utente o informazioni
+ di diagnostica senza generare eccezioni.
+ </remarks>
+ <example>
+ LogLeggiScrivi.ScriviLogMsg(
+     "Applicazione avviata.")
+
+ LogLeggiScrivi.ScriviLogMsg(
+     "Cliente salvato correttamente.")
+
+ LogLeggiScrivi.ScriviLogMsg(
+     $"Importati {TotRecord} record.")
+ </example>
+</member>
+<member name="M:WinItalPascal.LogReader.ReadLog">
+ <summary>
+ Legge il contenuto del file di log della libreria.
+ </summary>
+ <returns>
+ Restituisce il contenuto completo del file di log.
+ Se il file non esiste viene restituito il messaggio
+ "Nessun log disponibile.".
+ </returns>
+ <remarks>
+ Il metodo legge il file ItalPascal_Log.txt presente
+ nella cartella dell'applicazione.
+
+ Eventuali errori vengono intercettati e restituiti
+ come testo anziché generare eccezioni.
+ </remarks>
+ <example>
+ Dim testoLog As String =
+     LogReader.ReadLog()
+
+ MessageBox.Show(
+     testoLog,
+     "File Log")
+ </example>
+</member>
+<member name="M:WinItalPascal.LogReader.OpenLog">
+ <summary>
+ Apre il file di log utilizzando Blocco Note.
+ </summary>
+ <remarks>
+ Se il file ItalPascal_Log.txt è presente,
+ viene aperto tramite Notepad.
+
+ In caso di file mancante o errore di apertura,
+ viene visualizzato un messaggio tramite IPMessageBox.
+ </remarks>
+ <example>
+ LogReader.OpenLog()
+ </example>
+</member>
+<member name="M:WinItalPascal.LogReader.ClearLog">
+ <summary>
+ Elimina il file di log della libreria.
+ </summary>
+ <remarks>
+ Se il file ItalPascal_Log.txt esiste,
+ viene cancellato definitivamente.
+
+ Eventuali errori vengono gestiti e notificati
+ tramite IPMessageBox.
+ </remarks>
+ <example>
+ LogReader.ClearLog()
+ </example>
+</member>
+<member name="M:WinItalPascal.PopupHelper.AttachPopup(System.Windows.Forms.Control,System.String,System.Drawing.Image,System.Drawing.Color,System.Drawing.Color)">
+ <summary>
+ Associa automaticamente un popup informativo
+ a un controllo Windows Forms.
+ </summary>
+ <param name="ctrl">
+ Controllo al quale associare il popup.
+ </param>
+ <param name="message">
+ Messaggio visualizzato all'interno del popup.
+ </param>
+ <param name="img">
+ Immagine opzionale da mostrare nel popup.
+ </param>
+ <param name="backgroundColor">
+ Colore di sfondo del popup.
+ Se non specificato viene utilizzato il colore
+ predefinito del framework.
+ </param>
+ <param name="textColor">
+ Colore del testo del popup.
+ Se non specificato viene utilizzato il colore
+ predefinito del framework.
+ </param>
+ <remarks>
+ Il popup viene visualizzato automaticamente
+ quando il puntatore entra nel controllo e viene
+ chiuso all'uscita del mouse.
+
+ Se è attivo un popup centrale, il popup contestuale
+ non viene visualizzato.
+ </remarks>
+ <example>
+ PopupHelper.AttachPopup(
+     TxtNome,
+     "Inserire il nome del cliente")
+
+ PopupHelper.AttachPopup(
+     BtnSalva,
+     "Salva i dati correnti",
+     My.Resources.SaveIcon)
+ </example>
+</member>
+<member name="M:WinItalPascal.PopupHelper.ShowPopup(System.Windows.Forms.Control,System.String,System.Drawing.Image,System.Drawing.Color,System.Drawing.Color)">
+ <summary>
+ Visualizza un popup informativo in prossimità
+ del controllo specificato.
+ </summary>
+ <param name="ctrl">
+ Controllo vicino al quale visualizzare il popup.
+ </param>
+ <param name="message">
+ Messaggio da visualizzare.
+ </param>
+ <param name="img">
+ Immagine opzionale da mostrare nel popup.
+ </param>
+ <param name="backgroundColor">
+ Colore di sfondo del popup.
+ </param>
+ <param name="textColor">
+ Colore del testo del popup.
+ </param>
+ <remarks>
+ Se è già presente un popup attivo,
+ viene automaticamente chiuso prima
+ di visualizzarne uno nuovo.
+ </remarks>
+ <example>
+ PopupHelper.ShowPopup(
+     BtnInfo,
+     "Operazione completata")
+
+ PopupHelper.ShowPopup(
+     TxtCodice,
+     "Codice non valido",
+     My.Resources.WarningIcon)
+ </example>
 </member>
 <member name="T:WinItalPascal.ReportImpostazioni">
  <summary>
@@ -67,6 +484,180 @@ WinItalPascal
  <summary>
  Imposta stampa A4 orizzontale con margini personalizzati
  </summary>
+</member>
+<member name="T:WinItalPascal.ReportManager">
+ <summary>
+ Gestisce l'apertura dei report RDLC.
+ </summary>
+</member>
+<member name="M:WinItalPascal.ReportManager.ApriReport(Microsoft.Reporting.WinForms.ReportViewer,System.String,System.Data.DataTable,System.String)">
+ <summary>
+ Carica e visualizza un report RDLC utilizzando
+ una DataTable come origine dati.
+ </summary>
+ <param name="viewer">
+ Controllo ReportViewer che ospita il report.
+ </param>
+ <param name="reportName">
+ Nome del file RDLC da caricare.
+ </param>
+ <param name="table">
+ DataTable contenente i dati da visualizzare.
+ </param>
+ <param name="dataSourceName">
+ Nome della sorgente dati definita nel report RDLC.
+ </param>
+ <remarks>
+ Il report viene cercato nella cartella Reports
+ dell'applicazione.
+
+ Il metodo configura automaticamente:
+ - ProcessingMode.Local
+ - PrintLayout
+ - ZoomMode.PageWidth
+
+ In caso di errore l'evento viene registrato
+ nel sistema di logging della libreria.
+ </remarks>
+ <exception cref="T:System.ArgumentNullException">
+ Generata quando uno dei parametri obbligatori
+ risulta nullo o vuoto.
+ </exception>
+ <exception cref="T:System.IO.FileNotFoundException">
+ Generata quando il report RDLC non viene trovato.
+ </exception>
+ <example>
+ ReportManager.ApriReport(
+     ReportViewer1,
+     "RptClienti.rdlc",
+     dtClienti,
+     "DsClienti")
+ </example>
+</member>
+<member name="M:WinItalPascal.ReportManager.ApriReport(Microsoft.Reporting.WinForms.ReportViewer,System.String,System.String,System.String,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+ <summary>
+ Carica e visualizza un report RDLC eseguendo
+ una query SQL.
+ </summary>
+ <param name="viewer">
+ ReportViewer che visualizzerà il report.
+ </param>
+ <param name="reportName">
+ Nome del file RDLC.
+ </param>
+ <param name="query">
+ Query SQL utilizzata per generare i dati.
+ </param>
+ <param name="dataSourceName">
+ Nome della sorgente dati del report.
+ </param>
+ <param name="parameters">
+ Eventuale elenco di parametri SQL.
+ </param>
+ <remarks>
+ I dati vengono caricati tramite query SQL
+ e successivamente passati al report RDLC.
+ </remarks>
+ <example>
+ ReportManager.ApriReport(
+     ReportViewer1,
+     "RptOrdini.rdlc",
+     "SELECT * FROM Ordini",
+     "DsOrdini")
+ </example>
+</member>
+<member name="M:WinItalPascal.ReportManager.Refresh(Microsoft.Reporting.WinForms.ReportViewer)">
+ <summary>
+ Aggiorna il contenuto del ReportViewer.
+ </summary>
+ <param name="viewer">
+ ReportViewer da aggiornare.
+ </param>
+ <remarks>
+ Utile dopo modifiche ai dati o
+ dopo il caricamento di nuovi report.
+ </remarks>
+ <example>
+ ReportManager.Refresh(ReportViewer1)
+ </example>
+</member>
+<member name="M:WinItalPascal.ReportManager.Clear(Microsoft.Reporting.WinForms.ReportViewer)">
+ <summary>
+ Reimposta completamente il ReportViewer.
+ </summary>
+ <param name="viewer">
+ ReportViewer da ripulire.
+ </param>
+ <remarks>
+ Il metodo rimuove il report corrente
+ e ripristina le impostazioni iniziali
+ del controllo.
+ </remarks>
+ <example>
+ ReportManager.Clear(ReportViewer1)
+ </example>
+</member>
+<member name="M:WinItalPascal.ReportManager.EsportaPdf(System.String,System.Data.DataTable,System.String,System.Boolean)">
+ <summary>
+ Esporta un report RDLC in formato PDF.
+ </summary>
+ <param name="reportName">
+ Nome del file RDLC da esportare.
+ </param>
+ <param name="table">
+ DataTable utilizzata come origine dati.
+ </param>
+ <param name="dataSourceName">
+ Nome della sorgente dati definita nel report.
+ </param>
+ <param name="apriPdf">
+ Indica se il file PDF deve essere aperto
+ automaticamente dopo la creazione.
+ </param>
+ <remarks>
+ Viene visualizzata una finestra Salva con nome
+ che consente all'utente di scegliere il percorso
+ del file PDF.
+
+ Se apriPdf è impostato a True, il documento
+ viene aperto automaticamente al termine
+ dell'esportazione.
+ </remarks>
+ <exception cref="T:System.ArgumentNullException">
+ Generata quando i parametri obbligatori
+ non sono validi.
+ </exception>
+ <example>
+ ReportManager.EsportaPdf(
+     "RptClienti.rdlc",
+     dtClienti,
+     "DsClienti")
+
+ ReportManager.EsportaPdf(
+     "RptClienti.rdlc",
+     dtClienti,
+     "DsClienti",
+     False)
+ </example>
+</member>
+<member name="M:WinItalPascal.ReportManager.Stampa(Microsoft.Reporting.WinForms.ReportViewer)">
+ <summary>
+ Visualizza la finestra di stampa
+ del ReportViewer.
+ </summary>
+ <param name="viewer">
+ ReportViewer contenente il report da stampare.
+ </param>
+ <remarks>
+ Utilizza la finestra di stampa standard
+ di Microsoft ReportViewer.
+
+ L'esito dell'operazione viene registrato
+ nel sistema di logging della libreria.
+ </remarks>
+ <example>
+ ReportManager.Stampa(ReportViewer1)
+ </example>
 </member>
 </members>
 </doc>
