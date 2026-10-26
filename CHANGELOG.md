@@ -283,5 +283,5 @@ Modulo	Stato✅ ColoraDGV	Completato
 ⏳ Unit Test	Pianificato
 🎯 Release 3.0	Obiettivo finale
 
-Così il changelog diventa molto più leggibile e soprattutto evidenzia che avete già completato una grossa parte del lavoro di **documentazione XML IntelliSense**,
+Il changelog evidenzia che ho già completato una grossa parte del lavoro di **documentazione XML IntelliSense**,
  che sta diventando uno dei punti forti della libreria WinItalPascal.
