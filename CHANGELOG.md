@@ -3,7 +3,7 @@ Modifiche significative del progetto WinItalPascal documentate in questo file.
 
 ---
 
-# [2.7.0] - In sviluppo
+# [2.7.1] - In sviluppo
 
 ## ⚙️ ConfigHelper
 
@@ -101,7 +101,7 @@ Tutte le modifiche significative del progetto WinItalPascal saranno documentate 
 
 ---
 
-# [2.7.0] - In sviluppo
+# [2.7.1] - In sviluppo
 
 ## ⚙️ ConfigHelper
 
