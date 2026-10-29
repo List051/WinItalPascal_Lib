@@ -86,17 +86,6 @@ WinItalPascal
  ColoraColonneSpec.
  </summary>
 </member>
-<member name="M:WinItalPascal.ModColoriDgv.ColoraColonneSpec(System.Windows.Forms.DataGridView,System.Int32[],System.Drawing.Color,System.Drawing.Color)">
- <summary>
- Applica una colorazione personalizzata alle colonne specificate.
- Se esiste già una configurazione precedente sulla stessa griglia,
- viene sostituita.
- </summary>
- <param name="dgv">DataGridView da elaborare.</param>
- <param name="colonne">Indici delle colonne da colorare.</param>
- <param name="coloreSfondo">Colore di sfondo.</param>
- <param name="coloreTesto">Colore del testo.</param>
-</member>
 <member name="M:WinItalPascal.ModColoriDgv.ResetColoriDgv(System.Windows.Forms.DataGridView[])">
  <summary>
  Ripristina i colori originali delle DataGridView
