@@ -1,9 +1,14 @@
 # Changelog
 Modifiche significative del progetto WinItalPascal documentate in questo file.
 
+ ' Ripristinato utilizzo ColoraColonneSpec() più volte su stesso DataGridView
+ 
+ ' Esempi di utilizzo
+ ' ColoraColonneSpec(ClientiDataGrid,{1, 3},Color.Aquamarine, Color.DarkBlue)
+ ' ColoraColonneSpec(OrdiniDataGrid, {0, 2, 5})  ' Sfondo giallo chiaro, testo nero
 ---
 
-# [2.7.1] - In sviluppo
+# [2.7.2] - In sviluppo
 
 ## ⚙️ ConfigHelper
 
@@ -101,7 +106,7 @@ Tutte le modifiche significative del progetto WinItalPascal saranno documentate 
 
 ---
 
-# [2.7.1] - In sviluppo
+# [2.7.2] - In sviluppo
 
 ## ⚙️ ConfigHelper
 
