@@ -108,10 +108,10 @@ L'obiettivo è fornire codice riutilizzabile, ordinato e facilmente manutenibile
 
 📌 Versioni
 
-## **2.0.6**
+## **2.7.2**
 - Aggiunta `IPMessageBox`, alternativa personalizzabile al `MessageBox` standard di Windows Forms.
 - ...
-2.0.5
+2.7.2
 Corretta distribuzione DLL NuGet
 Migliorata gestione dipendenze NuGet
 Compatibilità migliorata con progetti esistenti
@@ -319,6 +319,10 @@ README_Logging.md
 README_Popup.md
 CHANGELOG.md
 
+Aggiunto Manuali Snodi
+
+[ManualeSnodi](https://github.com/List051/WinItalPascal_Lib/tree/main/Manuali_Snodi)
+
 Per la documentazione completa, gli esempi e i video dimostrativi:
 
 👉 WinItalPascal_Help
@@ -391,7 +395,7 @@ WinItalPascal può essere utilizzato in applicazioni personali, aziendali e comm
 
 WinItalPascal – Utility Library for VB.NET WinForms
 
-Versione documentazione: 2.0.6
+Versione documentazione: 2.7.2
 
 ---
 
